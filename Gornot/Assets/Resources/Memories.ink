@@ -1,0 +1,3 @@
+== toesinsand == 
+	Whether the sun had been warming it all day and it burns when you stand still for more than one second, or it's cold and wet from the sea, at first the sand always tickles your feet a little. Tiny little rocks, and a lot of them. You'll keep finding them in your shoes long after your holidays are over. And in your hair, in the pockets of your jacket, in your bag. In the insides of your ears even, if you decide to lie down, your eyes closed, and listen to the sounds of the sea (See: Exhibit 1.7. ???).
+	->END
