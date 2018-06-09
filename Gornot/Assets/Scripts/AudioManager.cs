@@ -22,8 +22,8 @@ public class AudioManager : MonoBehaviour {
     public void playSound (AudioClip clip, GameObject objectToPlayOn, float pitch, float volume)
     {
         AudioSource myAudioSource = Instantiate(audioSourcePrefab).GetComponent<AudioSource>();
-
-        myAudioSource.pitch = pitch;
+        float randomPitch = Random.Range(-0.1f, 0.1f); 
+        myAudioSource.pitch = pitch + randomPitch;
         myAudioSource.volume = volume;
         myAudioSource.clip = clip;
         myAudioSource.Play();
