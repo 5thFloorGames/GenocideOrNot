@@ -10,7 +10,7 @@ public class CreateSteps : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		StartCoroutine(MakeStep());
+		//StartCoroutine(MakeStep());
 	}
 	
 	// Update is called once per frame
@@ -19,6 +19,8 @@ public class CreateSteps : MonoBehaviour {
 	}
 
 	IEnumerator MakeStep(){
-		
+		while(true){
+			//Instantiate(left, transform.position)
+		}
 	}
 }
