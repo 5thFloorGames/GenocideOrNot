@@ -18,7 +18,7 @@ public class DestroyAfterABit : MonoBehaviour {
 	}
 
 	IEnumerator FadeOut(){
-		yield return new WaitForSeconds(3);
+		yield return new WaitForSeconds(6);
 		// while(rend.material.color.a > 0){
 		// 	rend.material.color = new Color(
 		// 		rend.material.color.r,

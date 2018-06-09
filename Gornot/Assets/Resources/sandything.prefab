@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 64579855451987062}
   - component: {fileID: 114738214905705276}
   m_Layer: 0
-  m_Name: sand
+  m_Name: sandything
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
