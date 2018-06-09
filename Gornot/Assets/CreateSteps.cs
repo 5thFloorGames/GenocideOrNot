@@ -10,7 +10,9 @@ public class CreateSteps : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		//StartCoroutine(MakeStep());
+		left = Resources.Load<GameObject>("Art/BetterLeft");
+		right = Resources.Load<GameObject>("Art/BetterRight");
+		StartCoroutine(MakeStep());
 	}
 	
 	// Update is called once per frame
@@ -20,7 +22,10 @@ public class CreateSteps : MonoBehaviour {
 
 	IEnumerator MakeStep(){
 		while(true){
-			//Instantiate(left, transform.position)
+			Instantiate(left, transform.position + new Vector3(0,-1.5f,0), Quaternion.identity);
+			yield return new WaitForSeconds(0.25f);
+			Instantiate(right, transform.position + new Vector3(0,-1.5f,0),Quaternion.identity);
+			yield return new WaitForSeconds(0.25f);
 		}
 	}
 }

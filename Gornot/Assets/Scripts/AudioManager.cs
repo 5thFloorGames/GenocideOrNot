@@ -19,16 +19,18 @@ public class AudioManager : MonoBehaviour {
         }
     }
 
-    public void playSound (AudioClip clip, GameObject objectToPlayOn, float pitch, float volume)
+    public void playSound (AudioClip clip, GameObject objectToPlayOn, float pitch, float volume, int waitToDestroy = 5)
     {
-        AudioSource myAudioSource = Instantiate(audioSourcePrefab).GetComponent<AudioSource>();
+        if(clip != null){
+            AudioSource myAudioSource = Instantiate(audioSourcePrefab).GetComponent<AudioSource>();
 
-        myAudioSource.pitch = pitch;
-        myAudioSource.volume = volume;
-        myAudioSource.clip = clip;
-        myAudioSource.Play();
+            myAudioSource.pitch = pitch;
+            myAudioSource.volume = volume;
+            myAudioSource.clip = clip;
+            myAudioSource.Play();
 
-        Destroy(myAudioSource.gameObject, myAudioSource.clip.length);
+            Destroy(myAudioSource.gameObject, myAudioSource.clip.length + waitToDestroy);
+        }
     }
 
 
