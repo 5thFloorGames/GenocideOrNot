@@ -21,7 +21,7 @@ public class MakethingsAppearOnTrigge : MonoBehaviour {
 	{
 		if(other.tag == "Player"){
 			exhibition.SetActive(true);
-            AudioManager.Instance.playSound(exhibitionOnSFX, gameObject, 0.5f, 1f);
+            AudioManager.Instance.playSound(exhibitionOnSFX, gameObject, 0.1f, 0.2f, 0.06f, false, 8);
 		}
 	}
 

@@ -63,4 +63,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29883a3a42c7e9a469faa9d1f3507dae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSourcePrefab: {fileID: 0}
+  audioSourcePrefab: {fileID: 1409194986522110, guid: bfcf2c1a87f2766429f2465f60db41e7,
+    type: 2}
+  imaginaryMusic: {fileID: 8300000, guid: bd80f9559b3663c4db6b4dfe0c2b5650, type: 3}
