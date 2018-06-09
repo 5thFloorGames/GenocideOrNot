@@ -7,6 +7,8 @@ public class AudioManager : MonoBehaviour {
     public static AudioManager Instance;
     public GameObject audioSourcePrefab;
 
+    public AudioClip imaginaryMusic;
+
     private void Awake()
     {
         if (Instance == null)
@@ -19,29 +21,31 @@ public class AudioManager : MonoBehaviour {
         }
     }
 
-    public void playSound (AudioClip clip, GameObject objectToPlayOn, float pitch, float volume, int waitToDestroy = 5)
+    public void Start()
     {
-<<<<<<< HEAD
-        AudioSource myAudioSource = Instantiate(audioSourcePrefab).GetComponent<AudioSource>();
-        float randomPitch = Random.Range(-0.1f, 0.1f); 
-        myAudioSource.pitch = pitch + randomPitch;
-        myAudioSource.volume = volume;
-        myAudioSource.clip = clip;
-        myAudioSource.Play();
-=======
+        AudioManager.Instance.playSound(imaginaryMusic, gameObject, 1f, 1f, 0.2f, true, 6);
+    }
+
+    public void playSound (AudioClip clip, GameObject objectToPlayOn, float volume, float pitch, float randomRange, bool loop, int waitToDestroy = 5)
+    {
         if(clip != null){
             AudioSource myAudioSource = Instantiate(audioSourcePrefab).GetComponent<AudioSource>();
-
-            myAudioSource.pitch = pitch;
+            float randomPitch = Random.Range(randomRange * -1, randomRange);
+            myAudioSource.pitch = pitch + randomPitch;
             myAudioSource.volume = volume;
+            myAudioSource.loop = loop;
             myAudioSource.clip = clip;
             myAudioSource.Play();
->>>>>>> 7f5aea512bd5480fcf6430c1ed1bf095686f2e29
 
             Destroy(myAudioSource.gameObject, myAudioSource.clip.length + waitToDestroy);
         }
     }
 
-
+    public void stopSound (string soundToStop, int waitToDestroy = 5)
+    {
+        GameObject soundToStopObject = GameObject.Find(soundToStop);
+        soundToStopObject.GetComponent<AudioSource>().Stop();
+        Destroy(soundToStopObject, waitToDestroy);
+    }
 
 }
