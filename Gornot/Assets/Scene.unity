@@ -343,6 +343,7 @@ GameObject:
   m_Component:
   - component: {fileID: 512830038}
   - component: {fileID: 512830037}
+  - component: {fileID: 512830039}
   m_Layer: 0
   m_Name: Script
   m_TagString: Untagged
@@ -374,6 +375,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
+--- !u!114 &512830039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 512830036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29883a3a42c7e9a469faa9d1f3507dae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSourcePrefab: {fileID: 1409194986522110, guid: bfcf2c1a87f2766429f2465f60db41e7,
+    type: 2}
+--- !u!1001 &570815110
+=======
 --- !u!1001 &652898418
 Prefab:
   m_ObjectHideFlags: 0
@@ -430,6 +447,7 @@ Prefab:
   m_ParentPrefab: {fileID: 100100000, guid: b0a19e082ebd44679956ff5dee948ff1, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &744693640
+>>>>>>> 56fec7293568073ac9eee06c0d84062389050bdd
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -468,6 +486,13 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+    - target: {fileID: 114430162044976962, guid: b0a19e082ebd44679956ff5dee948ff1,
+        type: 2}
+      propertyPath: exhibitionOnSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: 67867c5e5b8043c4ea1e59fc3d069a95, type: 3}
+=======
     - target: {fileID: 1361522762023232, guid: b0a19e082ebd44679956ff5dee948ff1, type: 2}
       propertyPath: m_Name
       value: Clover
@@ -481,6 +506,7 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+>>>>>>> 56fec7293568073ac9eee06c0d84062389050bdd
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b0a19e082ebd44679956ff5dee948ff1, type: 2}
   m_IsPrefabParent: 0
