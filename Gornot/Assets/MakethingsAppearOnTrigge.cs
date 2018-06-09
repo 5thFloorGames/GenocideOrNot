@@ -5,9 +5,10 @@ using UnityEngine;
 public class MakethingsAppearOnTrigge : MonoBehaviour {
 
 	public GameObject exhibition;
+    public AudioClip exhibitionOnSFX;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -20,6 +21,7 @@ public class MakethingsAppearOnTrigge : MonoBehaviour {
 	{
 		if(other.tag == "Player"){
 			exhibition.SetActive(true);
+            AudioManager.Instance.playSound(exhibitionOnSFX, gameObject, 0.5f, 1f);
 		}
 	}
 
