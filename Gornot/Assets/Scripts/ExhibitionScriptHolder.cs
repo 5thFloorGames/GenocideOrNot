@@ -12,6 +12,7 @@ public class ExhibitionScriptHolder : MonoBehaviour {
     {
         inkJSONAsset = Resources.Load<TextAsset>("Memories");
         story = new Story(inkJSONAsset.text);
+        GetLines("intro");
     }
 
     public void GetLines(string inkPath)

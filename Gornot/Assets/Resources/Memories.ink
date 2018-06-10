@@ -1,3 +1,12 @@
+== intro == 
+	Museum of Missed Opportunities
+	The Museum of Missed Opportunities is the world’s first attempt at showcasing everyday experiences from the pre-Underearth era. 
+	Founded in 2137, the museum honours century-old experiences, exhibiting to the visitor a sample of feelings which are true relics to the majority of current population.
+	The influence of nature had been important in the economy, culture and social life of the pre-descend people.
+	We aim to recreate the experiences of life on Earth before the climate catastrophe of 2084 in an interactive, engaging way.
+	All the entries are based on written submissions. 
+	->END
+
 == toesinsand == 
 	sand on your feet
 	Whether the sun had been warming it all day and it burns when you stand still for more than one second, or it's cold and wet from the sea, at first the sand always tickles your feet a little. 
@@ -48,3 +57,5 @@
 	Look up now and you’ll notice the vibrant kind of green that doesn’t exist anywhere else, except if you watch leaves from under a tree in the summertime.
 	Before your eyes manage to catch focus, it looks a little bit like a swarm of fireflies. 
 	->END
+
+
