@@ -14,18 +14,22 @@ public class ExhibitionScriptHolder : MonoBehaviour {
         story = new Story(inkJSONAsset.text);
     }
 
-    public string GetLine(string inkPath)
+    public void GetLines(string inkPath)
     {
-        string paragraph = "";
+        List<string> lines = new List<string>();
         if(story == null)
         {
-            return "";
+            return;
         }
         story.ChoosePathString(inkPath);
         while (story.canContinue)
         {
-            paragraph += story.Continue().Trim();
+            lines.Add(story.Continue().Trim());
         }
-        return paragraph;
+        FindObjectOfType<LetterByLetter>().StartTyping(lines);
+    }
+
+    public void StopTyping(){
+        FindObjectOfType<LetterByLetter>().StopTyping();
     }
 }

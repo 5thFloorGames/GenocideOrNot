@@ -8,10 +8,12 @@ public class MakethingsAppearOnTrigge : MonoBehaviour {
     public AudioClip exhibitionOnSFX;
 	public Color AmbientLight;
 	public FloorMaterial material;
+	public string inkpath;
+	private ExhibitionScriptHolder script;
 
     // Use this for initialization
     void Start () {
-		
+		script = FindObjectOfType<ExhibitionScriptHolder>();
 	}
 	
 	// Update is called once per frame
@@ -26,6 +28,7 @@ public class MakethingsAppearOnTrigge : MonoBehaviour {
             AudioManager.Instance.playSound(exhibitionOnSFX, gameObject, 0.1f, 0.2f, 0.06f, false, 8);
 			RenderSettings.ambientLight = AmbientLight;
 			AudioManager.Instance.ChangeMaterial(material);
+			script.GetLines(inkpath);
 		}
 	}
 
@@ -35,6 +38,7 @@ public class MakethingsAppearOnTrigge : MonoBehaviour {
 			exhibition.SetActive(false);
 			RenderSettings.ambientLight = Color.black;
 			AudioManager.Instance.ChangeMaterial(FloorMaterial.Normal);
+			script.StopTyping();
 		}
 	}
 }
