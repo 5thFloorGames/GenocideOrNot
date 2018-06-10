@@ -10,7 +10,7 @@ public class AudioManager : MonoBehaviour {
     [SerializeField] private AudioClip[] m_FootstepSounds;
     [SerializeField] private AudioClip[] m_FootstepSoundsSand;
     [SerializeField] private AudioClip[] m_FootstepSoundsSnow;
-    [SerializeField] private AudioClip[] m_FootstepLSD;
+    [SerializeField] private AudioClip[] m_FootstepSoundsLSD;
 
 
     public AudioClip imaginaryMusic;
@@ -38,11 +38,21 @@ public class AudioManager : MonoBehaviour {
 
     public void StepSound(){
         AudioClip[] steps;
-        if(material == FloorMaterial.Sand){
+        if (material == FloorMaterial.Sand)
+        {
             steps = m_FootstepSoundsSand; // sandrray
-        } else if(material == FloorMaterial.Snow){
-            steps = m_FootstepSoundsSnow; // snowarray
-        } else {
+        }
+        else if (material == FloorMaterial.Snow)
+        {
+            steps = m_FootstepSoundsSnow;
+        } // snowarray
+        else if (material == FloorMaterial.Snow)
+        {
+            steps = m_FootstepSoundsLSD; // snowarray
+
+        }
+        else
+        {
             steps = m_FootstepSounds; // normalarray
         }
         PlaySoundFromArray(steps);
@@ -54,7 +64,7 @@ public class AudioManager : MonoBehaviour {
         }
         int n = Random.Range(1, array.Length);
         AudioClip footstepsClip = array[n];
-        AudioManager.Instance.playSound(footstepsClip, gameObject, 1f, 0.3f, 0.06f, false, 1);
+        Instance.playSound(footstepsClip, gameObject, 0.2f, 0.4f, 0.08f, false, 3);
         array[n] = m_FootstepSounds[0];
         array[0] = footstepsClip;
     }
