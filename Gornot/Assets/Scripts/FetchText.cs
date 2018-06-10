@@ -15,7 +15,7 @@ public class FetchText : MonoBehaviour {
 	void Start () {
 		script = FindObjectOfType<ExhibitionScriptHolder>();
 		text = GetComponent<Text>();
-		text.text = script.GetLine(path);
+		//text.text = script.GetLine(path);
 		for(int j = 0; j< 10;j++){
 			fulltext += fulltext;
 		}
