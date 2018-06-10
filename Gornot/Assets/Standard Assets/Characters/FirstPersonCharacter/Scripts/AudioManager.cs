@@ -23,7 +23,7 @@ public class AudioManager : MonoBehaviour {
 
     public void Start()
     {
-        AudioManager.Instance.playSound(imaginaryMusic, gameObject, 1f, 1f, 0.2f, true, 6);
+        Instance.playSound(imaginaryMusic, gameObject, 1f, 1f, 0.2f, true, 6);
     }
 
     public void playSound (AudioClip clip, GameObject objectToPlayOn, float volume, float pitch, float randomRange, bool loop, int waitToDestroy = 5)
