@@ -87,7 +87,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 27d398586a0a1f040aa4960e49f042ca, type: 3}
   - {fileID: 8300000, guid: d0f7b1b6e7b83304aaf6b78eb18b40fa, type: 3}
   - {fileID: 8300000, guid: 312c019f75c914445913078641d8f4d7, type: 3}
-  m_FootstepLSD:
+  m_FootstepSoundsLSD:
   - {fileID: 8300000, guid: 91ac4ac1a878db84db7040cce5f3c0cf, type: 3}
   - {fileID: 8300000, guid: 9c43df2cc6e6bbe448ed95fe491bf781, type: 3}
   - {fileID: 8300000, guid: 020323903db88b045bde856c5e2d34cd, type: 3}

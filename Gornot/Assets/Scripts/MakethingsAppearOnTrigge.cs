@@ -5,8 +5,9 @@ using UnityEngine;
 public class MakethingsAppearOnTrigge : MonoBehaviour {
 
 	public GameObject exhibition;
-    public AudioClip exhibitionOnSFX;
-	public Color AmbientLight;
+    public AudioClip exhibitionOnSound;
+    public AudioClip exhibitionOffSound;
+    public Color AmbientLight;
 	public FloorMaterial material;
 	public string inkpath;
 	private ExhibitionScriptHolder script;
@@ -25,7 +26,7 @@ public class MakethingsAppearOnTrigge : MonoBehaviour {
 	{
 		if(other.tag == "Player"){
 			exhibition.SetActive(true);
-            AudioManager.Instance.playSound(exhibitionOnSFX, gameObject, 0.1f, 0.2f, 0.06f, false, 8);
+            AudioManager.Instance.playSound(exhibitionOnSound, gameObject, 0.1f, 0.9f, 0.1f, false, 8);
 			RenderSettings.ambientLight = AmbientLight;
 			AudioManager.Instance.ChangeMaterial(material);
 			script.GetLines(inkpath);
@@ -36,7 +37,8 @@ public class MakethingsAppearOnTrigge : MonoBehaviour {
 	{
 		if(other.tag == "Player"){
 			exhibition.SetActive(false);
-			RenderSettings.ambientLight = Color.black;
+            AudioManager.Instance.playSound(exhibitionOffSound, gameObject, 0.5f, 0.9f, 0.1f, false, 8);
+            RenderSettings.ambientLight = Color.black;
 			AudioManager.Instance.ChangeMaterial(FloorMaterial.Normal);
 			script.StopTyping();
 		}
