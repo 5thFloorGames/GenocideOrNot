@@ -164,13 +164,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             {
                 return;
             }
-            // pick & play a random footstep sound from the array,
-            // excluding sound at index 0
-            int n = Random.Range(1, m_FootstepSounds.Length);
-            AudioClip footstepsClip = m_FootstepSounds[n];
-            AudioManager.Instance.playSound(footstepsClip, gameObject, 1f, 0.3f, 0.06f, false, 1);
-            m_FootstepSounds[n] = m_FootstepSounds[0];
-            m_FootstepSounds[0] = footstepsClip;
+            AudioManager.Instance.StepSound();
         }
 
 

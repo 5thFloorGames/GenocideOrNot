@@ -6,6 +6,10 @@ public class AudioManager : MonoBehaviour {
 
     public static AudioManager Instance;
     public GameObject audioSourcePrefab;
+    private FloorMaterial material;
+    [SerializeField] private AudioClip[] m_FootstepSounds;
+    [SerializeField] private AudioClip[] m_FootstepSoundsSand;
+    [SerializeField] private AudioClip[] m_FootstepSoundsSnow;
 
     public AudioClip imaginaryMusic;
 
@@ -24,6 +28,33 @@ public class AudioManager : MonoBehaviour {
     public void Start()
     {
         Instance.playSound(imaginaryMusic, gameObject, 1f, 1f, 0.2f, true, 6);
+    }
+
+    public void ChangeMaterial(FloorMaterial material){
+        this.material = material;
+    }
+
+    public void StepSound(){
+        AudioClip[] steps;
+        if(material == FloorMaterial.Sand){
+            steps = m_FootstepSoundsSand; // sandrray
+        } else if(material == FloorMaterial.Snow){
+            steps = m_FootstepSoundsSnow; // snowarray
+        } else {
+            steps = m_FootstepSounds; // normalarray
+        }
+        PlaySoundFromArray(steps);
+    }
+
+    private void PlaySoundFromArray(AudioClip[] array){
+        if(array.Length == 0){
+            return;
+        }
+        int n = Random.Range(1, array.Length);
+        AudioClip footstepsClip = array[n];
+        AudioManager.Instance.playSound(footstepsClip, gameObject, 1f, 0.3f, 0.06f, false, 1);
+        array[n] = m_FootstepSounds[0];
+        array[0] = footstepsClip;
     }
 
     public void playSound (AudioClip clip, GameObject objectToPlayOn, float volume, float pitch, float randomRange, bool loop, int waitToDestroy = 5)

@@ -7,6 +7,7 @@ public class MakethingsAppearOnTrigge : MonoBehaviour {
 	public GameObject exhibition;
     public AudioClip exhibitionOnSFX;
 	public Color AmbientLight;
+	public FloorMaterial material;
 
     // Use this for initialization
     void Start () {
@@ -24,6 +25,7 @@ public class MakethingsAppearOnTrigge : MonoBehaviour {
 			exhibition.SetActive(true);
             AudioManager.Instance.playSound(exhibitionOnSFX, gameObject, 0.1f, 0.2f, 0.06f, false, 8);
 			RenderSettings.ambientLight = AmbientLight;
+			AudioManager.Instance.ChangeMaterial(material);
 		}
 	}
 
@@ -32,6 +34,7 @@ public class MakethingsAppearOnTrigge : MonoBehaviour {
 		if(other.tag == "Player"){
 			exhibition.SetActive(false);
 			RenderSettings.ambientLight = Color.black;
+			AudioManager.Instance.ChangeMaterial(FloorMaterial.Normal);
 		}
 	}
 }
