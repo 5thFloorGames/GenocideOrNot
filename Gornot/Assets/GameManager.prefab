@@ -65,4 +65,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSourcePrefab: {fileID: 1409194986522110, guid: bfcf2c1a87f2766429f2465f60db41e7,
     type: 2}
+  m_FootstepSounds:
+  - {fileID: 8300000, guid: 735a538f99b4043449e72c6e396feb7d, type: 3}
+  - {fileID: 8300000, guid: 3dff8fa8d97f40a4d8ac3357e4ff3629, type: 3}
+  - {fileID: 8300000, guid: 30799af656b2e25458a7754fd1ae8c0e, type: 3}
+  - {fileID: 8300000, guid: 28299d8c48209ba4da831d6ceb37b760, type: 3}
+  - {fileID: 8300000, guid: 76230d792c10cef458aa4fb951675a19, type: 3}
+  - {fileID: 8300000, guid: 6f491af5bb41699449c622bc3165c278, type: 3}
+  m_FootstepSoundsSand:
+  - {fileID: 8300000, guid: bd014a095d6d36e408a7982d670a99f5, type: 3}
+  - {fileID: 8300000, guid: c0ead184e8ec6ee429ed7db86188c5b5, type: 3}
+  - {fileID: 8300000, guid: e59cb7df09bf51145b6a2511390699f3, type: 3}
+  - {fileID: 8300000, guid: e02883cadbfb8634ebfb64130634a817, type: 3}
+  - {fileID: 8300000, guid: 27d398586a0a1f040aa4960e49f042ca, type: 3}
+  - {fileID: 8300000, guid: 2fa46b5232ed6ae4fbc8c67f522d4850, type: 3}
+  m_FootstepSoundsSnow:
+  - {fileID: 8300000, guid: d241207904c0407489597b1d1fd342d1, type: 3}
+  - {fileID: 8300000, guid: fcd07268b0bb263499ef13c0ed90991b, type: 3}
+  - {fileID: 8300000, guid: ed08f463e3ad397469dbf09e16519135, type: 3}
+  - {fileID: 8300000, guid: 6c2b53fda57b6c44bb6c807ad0880cdd, type: 3}
+  - {fileID: 8300000, guid: 27d398586a0a1f040aa4960e49f042ca, type: 3}
+  - {fileID: 8300000, guid: d0f7b1b6e7b83304aaf6b78eb18b40fa, type: 3}
+  - {fileID: 8300000, guid: 312c019f75c914445913078641d8f4d7, type: 3}
+  m_FootstepLSD:
+  - {fileID: 8300000, guid: 91ac4ac1a878db84db7040cce5f3c0cf, type: 3}
+  - {fileID: 8300000, guid: 9c43df2cc6e6bbe448ed95fe491bf781, type: 3}
+  - {fileID: 8300000, guid: 020323903db88b045bde856c5e2d34cd, type: 3}
+  - {fileID: 8300000, guid: 8cb2021a8c605fa408fbde70bad13bee, type: 3}
+  - {fileID: 8300000, guid: 0e3269406145ce04bbbd04d93901afd4, type: 3}
+  - {fileID: 8300000, guid: c978cdfa11e92bd4295366348b74a164, type: 3}
+  - {fileID: 8300000, guid: 3030749237db7e944beb4efbb520a372, type: 3}
+  - {fileID: 8300000, guid: 473fc0256d200e143897c0195ae51317, type: 3}
+  - {fileID: 8300000, guid: 6ae211f25abf3d745923f1ff1ab4f0b8, type: 3}
+  - {fileID: 8300000, guid: a3341e8bcb1d1c046b42a4d7b5f889a8, type: 3}
   imaginaryMusic: {fileID: 8300000, guid: bd80f9559b3663c4db6b4dfe0c2b5650, type: 3}
