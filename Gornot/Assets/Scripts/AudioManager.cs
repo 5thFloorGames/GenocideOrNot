@@ -73,6 +73,7 @@ public class AudioManager : MonoBehaviour {
     {
         if(clip != null){
             AudioSource myAudioSource = Instantiate(audioSourcePrefab).GetComponent<AudioSource>();
+            myAudioSource.gameObject.name = clip.name;
             float randomPitch = Random.Range(randomRange * -1, randomRange);
             myAudioSource.pitch = pitch + randomPitch;
             myAudioSource.volume = volume;
@@ -84,11 +85,11 @@ public class AudioManager : MonoBehaviour {
         }
     }
 
-    public void stopSound (string soundToStop, int waitToDestroy = 5)
+    public void stopSound (string soundToStop)
     {
         GameObject soundToStopObject = GameObject.Find(soundToStop);
         soundToStopObject.GetComponent<AudioSource>().Stop();
-        Destroy(soundToStopObject, waitToDestroy);
+        Destroy(soundToStopObject);
     }
 
 }

@@ -390,6 +390,7 @@ MonoBehaviour:
   exhibition: {fileID: 1241635046099736}
   exhibitionOnSound: {fileID: 8300000, guid: c723a7d06e8cb084892aad00e34ae7d3, type: 3}
   exhibitionOffSound: {fileID: 8300000, guid: 4487d12ec48f89148976f383b8fa8b51, type: 3}
+  AmbSound: {fileID: 8300000, guid: d3329fa7e8dc94048853a885220c4053, type: 3}
   AmbientLight: {r: 0.6764706, g: 0.6298175, b: 0, a: 0}
   material: 2
   inkpath: toesinsand
