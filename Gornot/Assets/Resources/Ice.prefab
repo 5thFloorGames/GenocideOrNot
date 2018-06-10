@@ -250,6 +250,7 @@ MonoBehaviour:
   exhibition: {fileID: 1148746614033644}
   exhibitionOnSound: {fileID: 8300000, guid: c723a7d06e8cb084892aad00e34ae7d3, type: 3}
   exhibitionOffSound: {fileID: 8300000, guid: 4487d12ec48f89148976f383b8fa8b51, type: 3}
+  AmbSound: {fileID: 8300000, guid: 88aa4b012fec45b488ab1f179faa8b03, type: 3}
   AmbientLight: {r: 0, g: 0, b: 0, a: 0}
   material: 1
   inkpath: crushingice
