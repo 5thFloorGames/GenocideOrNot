@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 0}
+  m_SkyboxMaterial: {fileID: 15303, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -355,6 +355,21 @@ Prefab:
     - target: {fileID: 4102445202533436, guid: d321bffd6f5a7504a9854d0221a07f38, type: 2}
       propertyPath: m_RootOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114150704466595734, guid: d321bffd6f5a7504a9854d0221a07f38,
+        type: 2}
+      propertyPath: AmbientLight.r
+      value: 0.05172414
+      objectReference: {fileID: 0}
+    - target: {fileID: 114150704466595734, guid: d321bffd6f5a7504a9854d0221a07f38,
+        type: 2}
+      propertyPath: AmbientLight.g
+      value: 0.44117647
+      objectReference: {fileID: 0}
+    - target: {fileID: 114150704466595734, guid: d321bffd6f5a7504a9854d0221a07f38,
+        type: 2}
+      propertyPath: AmbientLight.b
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d321bffd6f5a7504a9854d0221a07f38, type: 2}
@@ -870,6 +885,21 @@ Prefab:
     - target: {fileID: 4636189017872006, guid: 952b83069bc89134abde32da572d39b9, type: 2}
       propertyPath: m_LocalScale.z
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114726657817123864, guid: 952b83069bc89134abde32da572d39b9,
+        type: 2}
+      propertyPath: AmbientLight.r
+      value: 0.6764706
+      objectReference: {fileID: 0}
+    - target: {fileID: 114726657817123864, guid: 952b83069bc89134abde32da572d39b9,
+        type: 2}
+      propertyPath: AmbientLight.g
+      value: 0.6298175
+      objectReference: {fileID: 0}
+    - target: {fileID: 114726657817123864, guid: 952b83069bc89134abde32da572d39b9,
+        type: 2}
+      propertyPath: AmbientLight.b
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 952b83069bc89134abde32da572d39b9, type: 2}

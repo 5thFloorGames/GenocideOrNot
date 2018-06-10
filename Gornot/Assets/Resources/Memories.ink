@@ -17,3 +17,7 @@
 == clovers ==
 	You’re not supersticious - you wouldn’t change your path if a black cat crossed it (Related: Exhibit 2.5. Feeling a cat purr under your hand). But it’s always nice to find a clover with four leaves instead of three. Maybe you like the surprise of it, maybe it makes you feel unique - like you’re the chosen one. You pick the clover that had picked you, and place it between the pages of this book you had grabbed from the library. It will dry there between 136 and 137 and you will probably forget to take it out. Then someone else can find it and feel unique - that is, if they like the book enough to reach page 136.
 	->END
+
+== leaves == 
+	“Are you a sunshine person or a shade person?”, asks a friend as you enter a park. “Half and half”, you reply: you like to hide your face from the sun, but not the legs. So that’s what you do. You lie down in the shadow of a tree, letting your bare feet warm up in the sun. Look up now and you’ll notice the vibrant kind of green that doesn’t exist anywhere else, except if you watch leaves from under a tree in the summertime. Before your eyes manage to catch focus, it looks a little bit like a swarm of fireflies. 
+	->END
