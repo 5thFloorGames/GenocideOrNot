@@ -10,6 +10,8 @@ public class AudioManager : MonoBehaviour {
     [SerializeField] private AudioClip[] m_FootstepSounds;
     [SerializeField] private AudioClip[] m_FootstepSoundsSand;
     [SerializeField] private AudioClip[] m_FootstepSoundsSnow;
+    [SerializeField] private AudioClip[] m_FootstepLSD;
+
 
     public AudioClip imaginaryMusic;
 
