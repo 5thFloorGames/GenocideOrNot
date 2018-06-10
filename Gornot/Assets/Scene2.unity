@@ -14,7 +14,7 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 8
-  m_Fog: 1
+  m_Fog: 0
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.5
@@ -254,7 +254,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
@@ -296,7 +296,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4567745519670086, guid: dbe0703b1c073f54b9879dbdd0f74fae, type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dbe0703b1c073f54b9879dbdd0f74fae, type: 2}
@@ -354,22 +354,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4102445202533436, guid: d321bffd6f5a7504a9854d0221a07f38, type: 2}
       propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114150704466595734, guid: d321bffd6f5a7504a9854d0221a07f38,
-        type: 2}
-      propertyPath: AmbientLight.r
-      value: 0.05172414
-      objectReference: {fileID: 0}
-    - target: {fileID: 114150704466595734, guid: d321bffd6f5a7504a9854d0221a07f38,
-        type: 2}
-      propertyPath: AmbientLight.g
-      value: 0.44117647
-      objectReference: {fileID: 0}
-    - target: {fileID: 114150704466595734, guid: d321bffd6f5a7504a9854d0221a07f38,
-        type: 2}
-      propertyPath: AmbientLight.b
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d321bffd6f5a7504a9854d0221a07f38, type: 2}
@@ -437,7 +422,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &1053975135
 GameObject:
@@ -518,13 +503,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1053975135}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0.0023416965, z: 0, w: 0.99999726}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: -0.268, z: 0}
 --- !u!1001 &1088541603
 Prefab:
   m_ObjectHideFlags: 0
@@ -818,7 +803,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -862,7 +847,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4636189017872006, guid: 952b83069bc89134abde32da572d39b9, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 64773473220350488, guid: 952b83069bc89134abde32da572d39b9,
         type: 2}
@@ -900,6 +885,11 @@ Prefab:
         type: 2}
       propertyPath: AmbientLight.b
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114726657817123864, guid: 952b83069bc89134abde32da572d39b9,
+        type: 2}
+      propertyPath: material
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 952b83069bc89134abde32da572d39b9, type: 2}

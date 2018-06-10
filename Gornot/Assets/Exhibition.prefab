@@ -583,6 +583,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   exhibition: {fileID: 1014359250504432}
+  exhibitionOnSFX: {fileID: 0}
+  AmbientLight: {r: 0, g: 0, b: 0, a: 0}
+  material: 0
 --- !u!114 &114531224791910450
 MonoBehaviour:
   m_ObjectHideFlags: 1
